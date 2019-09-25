@@ -1,52 +1,21 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from 'react'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import ContentContainer from './ContentContainer'
+import Navigation from './Navigation'
+import Footer from './Footer'
 
-import Header from "./header"
-import "./layout.css"
+import Background from '../images/purple-tri.jpg'
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+const Layout = ({children, navigation = true, footer = true}) => (
+  <div style={{background: `url(${Background}) no-repeat center center fixed`}}>
+    {navigation && <Navigation />}
+    <ContentContainer>
+      <main className="dancin-styles-fitness" style={{marginLeft: `10vw`}}>
+        {children}
+      </main>
+    </ContentContainer>
+    {footer && <Footer />}
+  </div>
+)
 
 export default Layout
