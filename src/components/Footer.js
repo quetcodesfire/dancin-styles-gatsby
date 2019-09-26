@@ -4,7 +4,7 @@ import {AppBar, Toolbar, IconButton, Typography} from '@material-ui/core'
 import {Facebook, Twitter, YouTube} from '@material-ui/icons'
 
 const Footer = () => (
-  <AppBar position="sticky" style={{background: `darkOrchid`, width: `80%`, marginLeft: `10vw`}}>
+  <AppBar position="sticky" style={{background: `darkOrchid`}}>
     <Toolbar>
       {/* TODO: make section display flex footer content */}
       <section className="footer-container" style={{display: `flex`, justifyContent: `spaceAround`, alignItems: `center`}}>
@@ -13,13 +13,13 @@ const Footer = () => (
         </Typography>
         <div className="social-media-icons" style={{marginLeft: `35vw`}}>
           <IconButton>
-            <Facebook />
+          <a href="http://facebook.com/"><Facebook /></a>
           </IconButton>
           <IconButton>
-            <Twitter />
+          <a href="http://twitter.com/"><Twitter /></a>
           </IconButton>
           <IconButton>
-            <YouTube />
+            <a href="http://youtube.com/channel/UCG2xWM0TZAH7sRBQ618mXyQ"><YouTube /></a>
           </IconButton>
         </div>
       </section>

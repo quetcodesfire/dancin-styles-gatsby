@@ -3,8 +3,8 @@ import React from 'react'
 import {AppBar, Toolbar, IconButton, Typography} from '@material-ui/core'
 import {Menu} from '@material-ui/icons'
 
-const Navigation = () => (
-  <AppBar position="sticky" style={{background: `darkOrchid`, width: `80%`, marginLeft: `10vw`}}>
+const NavigationBar = () => (
+  <AppBar position="sticky" style={{background: `darkOrchid`}}>
     <Toolbar>
       <IconButton>
         <Menu />
@@ -16,4 +16,4 @@ const Navigation = () => (
   </AppBar>
 )
 
-export default Navigation
+export default NavigationBar

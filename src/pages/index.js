@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
-// import Navigation from '../components/Navigation'
 import Bio from '../components/Bio'
 import Info from '../components/Info'
-// import Footer from '../components/Footer'
 import Layout from '../components/Layout'
+import Registration from '../components/Registration'
 
 // import SEO from "../components/seo"
 
@@ -16,9 +15,8 @@ const IndexPage = () => (
     <img src={DancinStylesLogo} alt="Dancin Styles Logo" style={{height: `100vh`, width: `100%`}}/>
     <Bio />
     <Info />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Registration />
   </Layout>
-
 )
 
 export default IndexPage
