@@ -7,19 +7,22 @@ const Footer = () => (
   <AppBar position="sticky" style={{background: `darkOrchid`}}>
     <Toolbar>
       {/* TODO: make section display flex footer content */}
-      <section className="footer-container" style={{display: `flex`, justifyContent: `spaceAround`, alignItems: `center`}}>
-        <Typography className='footer-info' >
-          Dancin Styles 2019 | Site by: <a href="http://marquetreid.com" target="_blank" rel="noopener noreferrer">Marquet Reid</a> | All Rights Reserved
+      <section className="footer-container" style={{display: `flex`, flexDirection: `row`, justifyContent: `center`, alignItems: `center`, color: `#000`}}>
+        <div>
+        <Typography className='footer-info'>
+          Dancin Styles 2019 | Site by: <a href="http://marquetreid.com" target="_blank" rel="noopener noreferrer" style={{textDecoration: `none`, color: `#000`}}>Marquet Reid (@QuetCodesFire)</a> | All Rights Reserved
         </Typography>
-        <div className="social-media-icons" style={{marginLeft: `35vw`}}>
-          <IconButton>
-          <a href="http://facebook.com/"><Facebook /></a>
+        </div>
+        {/* TODO: Remove margin-left */}
+        <div className="social-media-icons" style={{marginLeft: `50vw`}}>
+          <IconButton href="http://facebook.com/" target="_blank" rel="noopener noreferrer">
+            <Facebook style={{color: `#000`}} />
           </IconButton>
-          <IconButton>
-          <a href="http://twitter.com/"><Twitter /></a>
+          <IconButton href="http://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <Twitter style={{color: `#000`}} />
           </IconButton>
-          <IconButton>
-            <a href="http://youtube.com/channel/UCG2xWM0TZAH7sRBQ618mXyQ"><YouTube /></a>
+          <IconButton href="http://youtube.com/channel/UCG2xWM0TZAH7sRBQ618mXyQ" target="_blank" rel="noopener noreferrer">
+            <YouTube style={{color: `#000`}} />
           </IconButton>
         </div>
       </section>

@@ -14,8 +14,9 @@ const Info = () => (
     <Card className="location" style={{background: `#000`, width: `30%`, height: `300px`, margin: `2vh 3vw`, color: `#fff`}}>
       <CardContent>
         <Typography variant="h3" style={{textAlign: `center`}}>Location</Typography>
-        <IconButton style={{padding: `0 auto`}}>
-          <span style={{textAlign: `center` }}><LocationOn /></span>
+        <IconButton>
+          {/* TODO: Remove margins */}
+          <LocationOn style={{marginLeft: `10vw`, color: `#fff`, fontSize: `48px`}}/>
         </IconButton>
         <Typography style={{textAlign: `center`}}>Extravadance, 44 Washington Blvd, Laurel, MD 20707</Typography>
       </CardContent>
@@ -23,9 +24,10 @@ const Info = () => (
 
     <Card className="location" style={{background: `#000`, width: `30%`, height: `300px`, margin: `2vh 3vw`, color: `#fff`}}>
       <CardContent>
+        {/* TODO: Remove margins */}
         <Typography variant="h3" style={{textAlign: `center`}}>Hours</Typography>
-        <IconButton style={{padding: `0 auto`}}>
-          <Schedule style={{textAlign: `center` }}/>
+        <IconButton>
+          <Schedule style={{marginLeft: `10vw`, color: `#fff`, fontSize: `48px`}}/>
         </IconButton>
         <Typography style={{textAlign: `center`}}>Saturdays: 10:30AM - 11:30AM</Typography>
         <Typography style={{textAlign: `center`}}>Dancehall Fusion every first Saturday:</Typography>

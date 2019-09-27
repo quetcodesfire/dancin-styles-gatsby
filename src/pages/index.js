@@ -5,13 +5,15 @@ import Bio from '../components/Bio'
 import Info from '../components/Info'
 import Layout from '../components/Layout'
 import Registration from '../components/Registration'
+import NavigationDrawer from '../components/NavigationDrawer'
 
 // import SEO from "../components/seo"
 
-import DancinStylesLogo from '../images/dancin-styles-logo.jpg'
+import DancinStylesLogo from '../assets/images/dancin-styles-logo.jpg'
 
 const IndexPage = () => ( 
   <Layout>
+    <NavigationDrawer />
     <img src={DancinStylesLogo} alt="Dancin Styles Logo" style={{height: `100vh`, width: `100%`}}/>
     <Bio />
     <Info />
