@@ -5,6 +5,7 @@ import {AppBar, Toolbar, IconButton, Typography} from '@material-ui/core'
 import {Menu} from '@material-ui/icons'
 
 const NavigationBar = () => {
+  // TODO: Make links standout on hover
   function toggleNavDropdown () {
     const links = document.getElementsByClassName('menu-bar-links-container')[0]
     if (links.style.display === 'block') {

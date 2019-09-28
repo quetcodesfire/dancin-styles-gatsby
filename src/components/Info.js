@@ -19,10 +19,6 @@ const Info = () => (
         <IconButton>
           <LocationOn className="location-icon" style={{ fontSize: `48px`}}/>
         </IconButton>
-        {/* North Laurel Community Center 
-            9411 Whiskey Bottom Rd
-            Laurel MD 20723 
-            Look out for a pop up class in your area for the dancehall fusion.*/}
         <Typography className="location-text">North Laurel Community Center<br /> 9411 Whiskey Bottom Road <br /> Laurel, MD 20723</Typography>
         <Typography className="location-text dancehall-fusion">Look for a dancehall fusion pop up class in your area!</Typography>
       </CardContent>
