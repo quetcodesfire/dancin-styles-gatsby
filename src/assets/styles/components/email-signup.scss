@@ -1,0 +1,32 @@
+.email-signup-container { 
+  height: 50vh;
+  width: 100vw;
+  // background: url('../../images/light-streak.jpg')
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email-signup-information {
+  .email-signup-button {
+    color: darkorchid;
+    border-color: darkorchid;
+    width: 10%;
+    margin-top: 1vh;
+  }
+  .email-signup-form {
+    background: #fff;
+    width: 30%;
+    height: 15%;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  background: black;
+  opacity: .8;
+  height: 80%;
+  width: 60%;
+  color: #fff;
+}
