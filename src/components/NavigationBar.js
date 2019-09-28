@@ -6,7 +6,7 @@ import {Menu} from '@material-ui/icons'
 
 const NavigationBar = () => {
   function toggleNavDropdown () {
-    const links = document.getElementsByClassName('menu-bar-links')[0]
+    const links = document.getElementsByClassName('menu-bar-links-container')[0]
     if (links.style.display === 'block') {
       links.style.display = "none"
     } else {
@@ -20,15 +20,15 @@ const NavigationBar = () => {
         <IconButton onClick={toggleNavDropdown}>
           <Menu />
         </IconButton>
-        <Typography variant="h5" className='dancin-styles-nav-logo' style={{color: `black`}}>
+        <Typography variant="h5" className='dancin-styles-nav-logo'>
           Dancin Styles Fitness
         </Typography>
       </Toolbar>
-      <div className="menu-bar-links" onClick={toggleNavDropdown} style={{display: `none`, color: `#000`, padding: `14px 16px`, textDecoration: `none`, position: `relative`, background: `darkOrchid`}}>
-        <Link to="#" style={{display: `block`, color: `#000`, padding: `14px 16px`, textDecoration: `none`, position: `relative`, background: `darkOrchid`}}>HOME</Link>
-        <Link to="#about" style={{display: `block`, color: `#000`, padding: `14px 16px`, textDecoration: `none`, position: `relative`, background: `darkOrchid`}}>ABOUT</Link>
-        <Link to="#classes" style={{display: `block`, color: `#000`, padding: `14px 16px`, textDecoration: `none`, position: `relative`, background: `darkOrchid`}}>CLASSES</Link>
-        <a href="http://www.ladystyleshairdesign.com" target="_blank" rel="noopener noreferrer" style={{display: `block`, color: `#000`, padding: `14px 16px`, textDecoration: `none`, position: `relative`, background: `darkOrchid`}}>LADY STYLES HAIR</a>
+      <div className="menu-bar-links-container" onClick={toggleNavDropdown}>
+        <Link className="menu-bar-link"to="#">HOME</Link>
+        <Link className="menu-bar-link"to="#about">ABOUT</Link>
+        <Link className="menu-bar-link"to="#classes">CLASSES</Link>
+        <a className="menu-bar-link" href="http://www.ladystyleshairdesign.com" target="_blank" rel="noopener noreferrer">LADY STYLES HAIR</a>
       </div>
     </AppBar>
   )

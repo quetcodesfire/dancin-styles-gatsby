@@ -14,7 +14,7 @@ import DancinStylesLogo from '../assets/images/dancin-styles-logo.jpg'
 const IndexPage = () => ( 
   <Layout>
     <NavigationDrawer />
-    <img src={DancinStylesLogo} alt="Dancin Styles Logo" style={{height: `100vh`, width: `100%`}}/>
+    <img src={DancinStylesLogo} alt="Dancin Styles Logo" className="dancin-styles-logo" />
     <Bio />
     <Info />
     <Registration />

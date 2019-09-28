@@ -1,0 +1,22 @@
+.footer {
+  background: darkorchid; /* doesn't work */
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #000
+}
+.footer-info a {
+  text-decoration: none;
+  color: #000;    
+}
+.social-media-icons {
+  margin-left: 50vw;
+  .facebook-icon,
+  .twitter-icon,
+  .youtube-icon {
+    color: #000
+  }
+}

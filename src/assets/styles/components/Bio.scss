@@ -1,0 +1,27 @@
+.bio-information {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+.bio-image {
+  max-width: 40%;
+}
+.bio {
+  color: #fff;
+
+  .bio-paragraph {
+    font-size: 24px;
+  }
+
+  .bio-quote {
+    font-size: 18px;
+  }
+
+  .bio-slogan {
+    font-size: 48px;
+    // text-align: "center";
+    margin-left: 15vw;
+  }
+}

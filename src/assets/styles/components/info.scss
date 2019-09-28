@@ -1,0 +1,40 @@
+.call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background: url('../../images/purple-lights.jpg') no-repeat center center; // background doesn't work
+  // background-size: cover; // background-size doesn't work
+  height: 50vh;
+}
+.location,
+.hours,
+.zumba {
+  // background: #000; // background doesn't work
+  width: 30%;
+  height: 300px;
+  margin: 2vh 3vw;
+  // color: #fff; // color doesn't work
+}
+.location-text {
+  text-align: center;
+}
+.dancehall-fusion {
+  padding-top: 5vh;
+}
+.location-icon {
+  margin-left: 10vw; // remove margin
+  color: #fff;
+  font-size: 48px; // font-size doesn't work
+}
+.hours-text {
+  text-align: center;
+}
+.hours-icon {
+  margin-left: 10vw; // remove margin
+  color: #fff;
+  font-size: 48px; // font-size doesn't work
+}
+.zumba-logo {
+  width: 100%;
+  margin-top: 3vh;
+}

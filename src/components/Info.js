@@ -3,41 +3,47 @@ import React from 'react'
 import {Card, CardContent, IconButton, Typography} from '@material-ui/core'
 import {LocationOn, Schedule} from '@material-ui/icons/';
 
-import ZumbaLogo from '../images/zumba-logo.jpg'
-import PurpleLights from '../images/purple-lights.jpg'
-// import PurpleTriangles from '../images/purple-tri2.jpg'
+import ZumbaLogo from '../assets/images/zumba-logo.jpg'
+import PurpleLights from '../assets/images/purple-lights.jpg'
 
 const Info = () => (
   <div className="dancin-styles-info" >
-    {/* <h2 style={{textAlign: `center`, color: `#fff`}}>More Info</h2> */}
-  <section className="call-to-action" style={{display: `flex`, justifyContent: `spaceAround`, alignItems: `center`, background: `url(${PurpleLights}) no-repeat center center`, backgroundSize: `cover`, height: `50vh`}}>
-    <Card className="location" style={{background: `#000`, width: `30%`, height: `300px`, margin: `2vh 3vw`, color: `#fff`}}>
+
+  {/* TODO: Move background styles to sass file */}
+  <section className="call-to-action" style={{background: `url(${PurpleLights}) no-repeat center center`, backgroundSize: `cover`}}>
+
+    {/* TODO: Move background and color to scss */}
+    <Card className="location" style={{background: `#000`, color: `#fff`}}>
       <CardContent>
-        <Typography variant="h3" style={{textAlign: `center`}}>Location</Typography>
+        <Typography className="location-text" variant="h3">Location</Typography>
         <IconButton>
-          {/* TODO: Remove margins */}
-          <LocationOn style={{marginLeft: `10vw`, color: `#fff`, fontSize: `48px`}}/>
+          <LocationOn className="location-icon" style={{ fontSize: `48px`}}/>
         </IconButton>
-        <Typography style={{textAlign: `center`}}>Extravadance, 44 Washington Blvd, Laurel, MD 20707</Typography>
+        {/* North Laurel Community Center 
+            9411 Whiskey Bottom Rd
+            Laurel MD 20723 
+            Look out for a pop up class in your area for the dancehall fusion.*/}
+        <Typography className="location-text">North Laurel Community Center<br /> 9411 Whiskey Bottom Road <br /> Laurel, MD 20723</Typography>
+        <Typography className="location-text dancehall-fusion">Look for a dancehall fusion pop up class in your area!</Typography>
       </CardContent>
     </Card>
 
-    <Card className="location" style={{background: `#000`, width: `30%`, height: `300px`, margin: `2vh 3vw`, color: `#fff`}}>
+    {/* TODO: Move background and color to scss */}
+    <Card className="hours" style={{background: `#000`, color: `#fff`}}>
       <CardContent>
         {/* TODO: Remove margins */}
-        <Typography variant="h3" style={{textAlign: `center`}}>Hours</Typography>
+        <Typography className="hours-text" variant="h3">Hours</Typography>
         <IconButton>
-          <Schedule style={{marginLeft: `10vw`, color: `#fff`, fontSize: `48px`}}/>
+          <Schedule className="hours-icon" style={{fontSize: `48px`}}/>
         </IconButton>
-        <Typography style={{textAlign: `center`}}>Saturdays: 10:30AM - 11:30AM</Typography>
-        <Typography style={{textAlign: `center`}}>Dancehall Fusion every first Saturday:</Typography>
-        <Typography style={{textAlign: `center`}}>10:30AM - 12:30PM</Typography>
+        <Typography className="hours-text">Saturdays: 10:30AM - 11:30AM</Typography>
       </CardContent>
     </Card>
 
-    <Card className="location" style={{background: `#000`, width: `30%`, height: `300px`, margin: `2vh 3vw`}}>
+    {/* TODO: Move background to scss */}
+    <Card className="zumba" style={{background: `#000`}}>
       <CardContent>
-        <img src={ZumbaLogo} alt="zumba logo" style={{width: `100%`, marginTop: `3vh`}}/>
+        <img src={ZumbaLogo} alt="zumba logo" className="zumba-logo" />
       </CardContent>
     </Card>
   </section>
