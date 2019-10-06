@@ -29,6 +29,7 @@ const NavigationBar = () => {
         <Link className="menu-bar-link"to="#">HOME</Link>
         <Link className="menu-bar-link"to="#about">ABOUT</Link>
         <Link className="menu-bar-link"to="#classes">CLASSES</Link>
+        <Link className="menu-bar-link"to="#videos">VIDEOS</Link>
         <a className="menu-bar-link" href="http://www.ladystyleshairdesign.com" target="_blank" rel="noopener noreferrer">LADY STYLES HAIR</a>
       </div>
     </AppBar>

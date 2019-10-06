@@ -7,6 +7,7 @@ import Info from '../components/Info'
 import Layout from '../components/Layout'
 import Registration from '../components/Registration'
 import NavigationDrawer from '../components/NavigationDrawer'
+import Youtube from '../components/Youtube'
 
 // import SEO from "../components/seo"
 
@@ -19,7 +20,8 @@ const IndexPage = () => (
     <Bio />
     <Info />
     <Registration />
-    <EmailSignup />
+    {/* <EmailSignup /> */}
+    <Youtube />
   </Layout>
 )
 

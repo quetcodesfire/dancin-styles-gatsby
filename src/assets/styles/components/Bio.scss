@@ -1,4 +1,4 @@
-.bio-information {
+.bio-container {
   background: #000;
   display: flex;
   justify-content: space-between;
@@ -6,22 +6,45 @@
   height: 50vh;
 }
 .bio-image {
-  max-width: 40%;
+  width: 40%;
+  height: 100%;
 }
-.bio {
+.bio-information {
   color: #fff;
 
   .bio-paragraph {
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: 3vh;
   }
 
   .bio-quote {
-    font-size: 18px;
+    font-size: 2.5vh;
   }
 
   .bio-slogan {
-    font-size: 48px;
+    font-size: 6vh;
     // text-align: "center";
     margin-left: 15vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bio-container {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    justify-content: space-between;
+    align-items: center;
+    height: 150vh;
+    
+    .bio-image {
+      height: 50%;
+      width: 120%;
+    }
+
+    .bio-slogan {
+      font-size: 4.2vh;
+      margin-left: 0;
+    }
   }
 }

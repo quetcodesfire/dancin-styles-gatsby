@@ -3,9 +3,9 @@ import React from 'react'
 import Temi from '../assets/images/temi.png'
 
 const Bio = () => (
-  <section className="bio-information" id="about">
-    <img className="bio-image"src={Temi} alt="Temi" />
-    <section className="bio">
+  <section className="bio-container" id="about">
+    <img className="bio-image" src={Temi} alt="Temi" />
+    <section className="bio-information">
       <p className="bio-paragraph">Temi Roberts is your AFAA certified Zumba and Dancehall fusion instructor who has always had a passion for dance 
       and is now offering classes with various world rhythms from African, Caribbean and hip hop music that'll keep you moving
       and melting the calories away. Get signed up today for a fun, lusty, vibrant experience.</p>

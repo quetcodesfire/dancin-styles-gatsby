@@ -11,7 +11,7 @@
 .zumba {
   // background: #000; // background doesn't work
   width: 30%;
-  height: 300px;
+  height: 67.5%;
   margin: 2vh 3vw;
   // color: #fff; // color doesn't work
 }
@@ -37,4 +37,25 @@
 .zumba-logo {
   width: 100%;
   margin-top: 3vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center
+    height: 100vh;
+  }
+  .location,
+  .hours,
+  .zumba {
+    width: 100%;
+    height: 100%;
+    margin: 2vh 3vw;
+  }
+  .location-icon,
+  .hours-icon {
+    margin-left: 35vw;
+  }
 }

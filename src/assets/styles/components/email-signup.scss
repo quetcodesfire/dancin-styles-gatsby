@@ -30,3 +30,13 @@
   width: 60%;
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  .email-signup-information {
+    .email-signup-form {
+      width: 90%;
+    }
+    width: 90%
+  }
+
+}

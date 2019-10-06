@@ -1,6 +1,11 @@
 @import "components/__components";
 @import "pages/__pages";
 
+body { 
+  margin:0; 
+  width: 100vw;
+}
+
 main {
   overflow: hidden;
 }

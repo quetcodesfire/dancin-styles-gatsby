@@ -1,5 +1,6 @@
 .footer {
   background: darkorchid; /* doesn't work */
+  margin-top: 0;
 }
 .footer-container {
   display: flex;
@@ -18,5 +19,19 @@
   .twitter-icon,
   .youtube-icon {
     color: #000
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .social-media-icons {
+    margin-left: 0;
   }
 }
