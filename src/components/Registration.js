@@ -2,7 +2,7 @@ import React from 'react'
 
 import {Button} from '@material-ui/core'
 
-import DanceClass from '../assets/images/dancin-styles-class2.JPG' // trouble renaming this to lowercase "jpg"
+import DanceClass from '../assets/images/dancin-styles-class.jpg'
 
 const Registration = () => (
   <>
