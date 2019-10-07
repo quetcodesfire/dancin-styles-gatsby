@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import NavigationBar from './NavigationBar'
 import Footer from './Footer'
@@ -14,5 +15,11 @@ const Layout = ({children, navigation = true, footer = true}) => (
     {footer && <Footer />}
   </div>
 )
+
+Layout.propTypes = {
+  children: PropTypes.node,
+  footer: PropTypes.bool,
+  navigation: PropTypes.bool
+}
 
 export default Layout

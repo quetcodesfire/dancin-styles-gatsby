@@ -2,9 +2,9 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Bio from '../components/Bio'
-import EmailSignup from '../components/EmailSignUp'
+// import EmailSignup from '../components/EmailSignUp'
 import Info from '../components/Info'
-import Layout from '../components/Layout'
+import Layout from '../components/layout' // issue renaming this to capital L
 import Registration from '../components/Registration'
 import NavigationDrawer from '../components/NavigationDrawer'
 import Youtube from '../components/Youtube'
