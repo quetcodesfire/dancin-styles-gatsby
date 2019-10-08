@@ -28,7 +28,7 @@ const Info = () => (
             <LocationOn className="location-icon" style={{ fontSize: `48px`}}/>
           </IconButton> */}
           <Typography className="location-text"><br /><br />North Laurel Community Center<br /> 9411 Whiskey Bottom Road <br /> Laurel, MD 20723<br /><br /></Typography>
-          <Typography className="location-text">Saturday's: 7:30pm - 8:30pm</Typography>
+          <Typography className="location-text">Every Saturday: 7:30pm - 8:30pm</Typography>
         </CardContent>
       </Card>
 
@@ -37,7 +37,7 @@ const Info = () => (
         <CardContent>
           {/* TODO: Remove margins */}
           {/* <Typography className="hours-text" variant="h3">Hours</Typography> */}
-          <Typography className="hours-text" variant="h3">Dance Hall Fusion</Typography>
+          <Typography className="hours-text dhf-header" variant="h4">Dance Hall Fusion</Typography>
           {/* <IconButton>
             <Schedule className="hours-icon" style={{fontSize: `48px`}}/>
           </IconButton> */}
