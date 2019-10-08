@@ -28,7 +28,7 @@ const Info = () => (
             <LocationOn className="location-icon" style={{ fontSize: `48px`}}/>
           </IconButton> */}
           <Typography className="location-text"><br /><br />North Laurel Community Center<br /> 9411 Whiskey Bottom Road <br /> Laurel, MD 20723<br /><br /></Typography>
-          <Typography className="location-text">Every Saturday: 7:30pm - 8:30pm</Typography>
+          <Typography className="location-text">Mondays: 7:30pm - 8:30pm</Typography>
         </CardContent>
       </Card>
 
@@ -42,7 +42,7 @@ const Info = () => (
             <Schedule className="hours-icon" style={{fontSize: `48px`}}/>
           </IconButton> */}
           <Typography className="hours-text"><br /><br />Extravadance(ECDC)<br /> 44 Washington Blvd <br /> Laurel, MD 20707<br /><br /></Typography>
-          <Typography className="hours-text">Saturdays: 10:30AM - 11:30AM</Typography>
+          <Typography className="hours-text">Saturdays: 10:30AM - 12:00AM</Typography>
           <Typography className="hours-text"><br />Look for a dancehall fusion pop up class in your area!</Typography>
         </CardContent>
       </Card>
