@@ -8,16 +8,18 @@
   align-items: center;
 }
 .email-signup-information {
-  .email-signup-button {
-    color: darkorchid;
-    border-color: darkorchid;
-    width: 10%;
-    margin-top: 1vh;
-  }
   .email-signup-form {
     background: #fff;
     width: 30%;
     height: 15%;
+  }
+  .email-signup-button {
+    display: block;
+    color: darkorchid;
+    border-color: darkorchid;
+    width: 40%;
+    margin-top: 1vh;
+    margin: 1vh auto;
   }
   display: flex;
   flex-direction: column;
@@ -36,7 +38,8 @@
     .email-signup-form {
       width: 90%;
     }
-    width: 90%
+    height: 90%;
+    width: 95%;
   }
 
 }
