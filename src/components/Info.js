@@ -20,34 +20,49 @@ const Info = () => (
       </Card>
 
       {/* TODO: Move background and color to scss */}
-      <Card className="location" style={{background: `#000`, color: `#fff`}}>
+
+      {/* <Card className="location" style={{background: `#000`, color: `#fff`}}>
         <CardContent>
-          {/* <Typography className="location-text" variant="h3">Location</Typography> */}
           <Typography className="location-text" variant="h3">Zumba Classes</Typography>
-          {/* <IconButton>
+          <IconButton>
             <LocationOn className="location-icon" style={{ fontSize: `48px`}}/>
-          </IconButton> */}
+          </IconButton>
           <Typography className="location-text"><br /><br />North Laurel Community Center<br /> 9411 Whiskey Bottom Road <br /> Laurel, MD 20723<br /><br /></Typography>
           <Typography className="location-text">Mondays: 7:30pm - 8:30pm</Typography>
         </CardContent>
-      </Card>
+      </Card> */}
 
       {/* TODO: Move background and color to scss */}
       <Card className="hours" style={{background: `#000`, color: `#fff`}}>
         <CardContent>
           {/* TODO: Remove margins */}
           {/* <Typography className="hours-text" variant="h3">Hours</Typography> */}
-          <Typography className="hours-text dhf-header" variant="h4">Dance Hall Fusion</Typography>
+          <Typography className="hours-text dhf-header" variant="h4">Dancehall Fusion</Typography>
           {/* <IconButton>
             <Schedule className="hours-icon" style={{fontSize: `48px`}}/>
           </IconButton> */}
           <Typography className="hours-text"><br /><br />Extravadance(ECDC)<br /> 44 Washington Blvd <br /> Laurel, MD 20707<br /><br /></Typography>
-          <Typography className="hours-text">Saturdays: 10:30AM - 12:00AM</Typography>
+          <Typography className="hours-text">Every First Saturdays: 10:30AM - 12:00AM</Typography>
           <Typography className="hours-text"><br />Look for a dancehall fusion pop up class in your area!</Typography>
+          <Typography className="hours-text"><br /><b>Be sure to register below!</b></Typography>
         </CardContent>
       </Card>
 
-      
+      <Card className="hours" style={{background: `#000`, color: `#fff`}}>
+        <CardContent>
+          {/* TODO: Remove margins */}
+          {/* <Typography className="hours-text" variant="h3">Hours</Typography> */}
+          <Typography className="hours-text dhf-header" variant="h4">More Dancehall Fusion</Typography>
+          {/* <IconButton>
+            <Schedule className="hours-icon" style={{fontSize: `48px`}}/>
+          </IconButton> */}
+          <Typography className="hours-text"><br /><br />Girlfit Workout Studio<br /> 5010 Brown Station Rd. <br /> Upper Marlboro, MD 20772<br /><br /></Typography>
+          <Typography className="hours-text">Every Second Saturday: 12:00PM - 1:00AM</Typography>
+          <Typography className="hours-text"><br />Look for a dancehall fusion pop up class in your area!</Typography>
+          <Typography className="hours-text"><br /><b>Be sure to register below!</b></Typography>
+        </CardContent>
+      </Card>
+
     </section>
   </div>
 )
