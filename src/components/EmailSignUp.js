@@ -37,21 +37,27 @@ const EmailSignup = () => {
   }
 
   const handleSubmit = e => {
-    // e.preventDefault()
-    console.log('submitted')
-    console.log('email: ', email)
+    e.preventDefault()
+    console.log('email submitted: ', email)
     // handleChange()
   }
 
   return (
+    // <section className="email-signup-container" style={{background: `url(${PurpleLights}) no-repeat center center`, backgroundSize: `cover`}}>
+    //   <div className="email-signup-information">
+    //     <p>Looking for dancing and fitness tips as well as being kept up to date with our latest developments?</p>
+    //     <p>Signup for our email list below!</p>
+    //     <form className="email-signup-form" action="https://gem.godaddy.com/signups/subscribe/7e37cbee9ef54fa382833132333ef563" method="post" noValidate autoComplete="off">
+    //     <TextField id="email-input" className="email-signup-input" label="email" type="email" variant="filled" onChange={handleChange} value={email} />
+    //     <Button className="email-signup-button" type="submit" variant="outlined" onClick={handleSubmit}>Subscribe</Button>
+    //     </form>
+    //   </div>
+    // </section>
     <section className="email-signup-container" style={{background: `url(${PurpleLights}) no-repeat center center`, backgroundSize: `cover`}}>
       <div className="email-signup-information">
         <p>Looking for dancing and fitness tips as well as being kept up to date with our latest developments?</p>
         <p>Signup for our email list below!</p>
-        <form className="email-signup-form" action="https://gem.godaddy.com/signups/subscribe/7e37cbee9ef54fa382833132333ef563" method="post" noValidate autoComplete="off">
-        <TextField id="email-input" className="email-signup-input" label="email" type="email" variant="filled" onChange={handleChange} value={'test@email.com'} />
-        <Button className="email-signup-button" type="submit" variant="outlined" onClick={handleSubmit}>Subscribe</Button>
-        </form>
+        <iframe src="https://gem.godaddy.com/signups/7e37cbee9ef54fa382833132333ef563/iframe" scrolling="no" frameborder="0" height="186" style={{maxWidth: `400px`, width: `100%`}}></iframe>
       </div>
     </section>
   )
