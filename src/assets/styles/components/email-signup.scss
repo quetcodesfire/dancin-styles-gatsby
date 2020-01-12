@@ -33,6 +33,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .email-signup-container { 
+    height: 70vh;
+    width: 100vw;
+  }
   .email-signup-information {
     .email-signup-form {
       width: 90%;
